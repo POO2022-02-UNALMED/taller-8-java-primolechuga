@@ -11,10 +11,13 @@ public abstract class Futbolista implements Comparable{
     public Futbolista(){
         this("Maradona",30,"delantero");
     
+    }@Override
+    public boolean equals(Object arg0) {
+        return super.equals(arg0);
     }
     public abstract boolean jugarConLasManos();
     public String toString(){
-        return ("El futbolista "+this.nombre+" tiene "+this.edad+" y juega de "+this.posicion);
+        return ("El futbolista "+this.nombre+" tiene "+this.edad+", y juega de "+this.posicion);
     }
     public String getNombre() {
         return nombre;
@@ -33,7 +36,6 @@ public abstract class Futbolista implements Comparable{
     }
     @Override
     public int compareTo(Object arg0) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
