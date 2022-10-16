@@ -8,9 +8,6 @@ public class Portero extends Futbolista{
         this.golesRecibidos=golesRecibidos;
         this.dorsal=dorsal;
     }
-    public Portero(){
-        this("Manolito",12,(short)13,(byte)07);
-    }
     @Override
     public String toString() {
         return super.toString()+" con el dorsal "+this.dorsal+". Le han marcado "+this.golesRecibidos;
