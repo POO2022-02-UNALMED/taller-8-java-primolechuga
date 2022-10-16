@@ -11,8 +11,8 @@ public abstract class Futbolista implements Comparable{
     public Futbolista(){
         this("Maradona",30,"delantero");
 
-    }@Override
-    public boolean equals(Object arg0) {
+    }
+    public boolean equals(Futbolista arg0) {
         return super.equals(arg0);
     }
     public abstract boolean jugarConLasManos();
